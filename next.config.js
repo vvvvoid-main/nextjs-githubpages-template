@@ -8,6 +8,7 @@ const nextConfig = {
     return config;
   },
   reactStrictMode: true,
+  assetPrefix: process.env.GITHUB_ACTIONS ? "/nextjs-githubpages-template" : "",
   basePath: process.env.GITHUB_ACTIONS ? "/nextjs-githubpages-template" : "",
   trailingSlash: true,
   eslint: {
